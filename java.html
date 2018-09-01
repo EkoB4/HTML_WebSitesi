@@ -3,18 +3,30 @@
    
     <head>
          <meta charset =  "utf-8"/> 
-		 
-         <link rel ="stylesheet" href =" main.css"/>
+      <!--
+       document.getElementbyId("id").style.özellik
+       style.color ="red";
+       style.backroundcolor = "yellow"
+       style.textAlign = "center";
+       style.fonSize = "40px";
+       style.visibility="hidden" veya "visible"
+      -->   
     </head>
    <script>
-
-   window.alert(x);
-   var x = 32;
-   window.alert(x);
-   
+     function kaybet() {
+     var x = document.getElementById("para");
+     x.style.visibility = "hidden"
+     }
+     function goster() {
+     var x = document.getElementById("para");
+     x.style.visibility="visible"
+    
+     }
    
    </script>
-    
+   <p id = "para">Yazılım Bilimi </p>
+   <button onclick="kaybet()">kaybet</button>
+   <button onclick="goster()">goster</button>
    
    <body>
    
